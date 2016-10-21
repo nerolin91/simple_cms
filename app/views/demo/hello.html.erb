@@ -11,3 +11,8 @@
 
 <a href="/demo/index">index page 1</a><br />
 <%= link_to('index page 2', {:action => 'index'}) %>
+
+<br />
+ID: <%= params[:id] %><br />
+ID: <%= @id %><br />
+Page: <%= @page.to_i + 1 %><br />
