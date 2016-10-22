@@ -9,7 +9,7 @@ Rails.application.routes.draw do
 
 #   get 'subjects/delete'
 
-  match ':controller(/:action(/:id))', :via => :get
+  match ':controller(/:action(/:id))', :via => [:get,:post]
   root 'demo#index'
 
 end
